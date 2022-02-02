@@ -6,8 +6,8 @@ use Illuminate\Database\Migrations\Migration;
 
 class CreateCategoriesTable {
 
-    @return
-
+    /*@return
+*/
 public function up()
 {
     Schema::create('categories', function (Blueprint $table) {
@@ -22,8 +22,8 @@ public function up()
     });
 }
 
-@return
-
+/*@return
+*/
 public function down()
 {
     Schema::dropIfExists('categories');

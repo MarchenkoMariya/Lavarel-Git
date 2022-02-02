@@ -72,7 +72,9 @@ public function store(Request $request)
      */
 
     public function destroy(Category $category){
-        //
+        $category->delete();
+
+        return redirect()->route('admin.category.index');
     }
 
 }
