@@ -7,15 +7,15 @@ class User extends Authenticatable
 {
     use Notifable;
 
-    @var
-
+    /*@var
+*/
 protected $fillable = [
     'name', 'email', 'password',
 ];
 
 
-    @var
-
+    /*@var
+*/
 protected $hidden = [
     'password', 'remember_token',
 ];
